@@ -1,25 +1,27 @@
-import logo from './logo.svg';
+/**
+ * This is the main App component for the virtual wardrobe application.
+ * It imports two child components: TemperatureGraph and VirtualWardrobe.
+ * 
+ * Usage: <App />
+ */
+
 import './App.css';
+import TemperatureGraph from './Graphs/TemperatureGraph';
+import VirtualWardrobe from './Wardrobe/VirtualWardrobe';
+
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        // alexos
+        <TemperatureGraph />
+        <VirtualWardrobe />
       </header>
     </div>
   );
 }
 
 export default App;
+

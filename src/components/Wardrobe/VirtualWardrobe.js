@@ -10,13 +10,10 @@ import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Import the carousel CSS
 import styles from './VirtualWardrobe.module.css';
+import { Outfit } from './Outfit.js';
 
 // Import your outfit images
-import outfit1 from './outfits/outfit1.jpg';
-import outfit2 from './outfits/outfit2.jpg';
-import outfit3 from './outfits/outfit3.jpg';
-import outfit4 from './outfits/outfit4.jpg';
-// Add more outfits as needed
+import * as outfits from './images/index';
 
 const VirtualWardrobe = () => {
   return (
@@ -29,18 +26,12 @@ const VirtualWardrobe = () => {
         interval={5000}
         useKeyboardArrows={true} // enable scrolling with the keyboard arrows
         emulateTouch={true} // enable scrolling with touch gestures
-
       >
-        <div>
-          <img src={outfit1} alt="Outfit 1" />
-        </div>
-        <div>
-          <img src={outfit2} alt="Outfit 2" />
-        </div>
-        <div>
-          <img src={outfit3} alt="Outfit 3" />
-        </div>
-        {/* Add more carousel items as needed */}
+
+      
+        {Object.values(outfits).map((outfit, index) => (
+          <Outfit key={index} src={outfit} alt={`Outfit ${index + 1}`} />
+        ))}
       </Carousel>
     </div>
   );

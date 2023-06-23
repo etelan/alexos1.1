@@ -48,6 +48,6 @@ Data Visualization Color 3: #2ECC71 - A bright green for tertiary data points or
 
 Error or Warning Color: #D35400 - A bright orange to draw attention to errors or warnings.
 
-- ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) `#f03c15`
+- ![#f03c15](https://placehold.co/15x15/ffffff/ffffff.png) `#ffffff`
 - ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) `#c5f015`
 - ![#1589F0](https://placehold.co/15x15/1589F0/1589F0.png) `#1589F0`

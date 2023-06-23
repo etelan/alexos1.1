@@ -28,9 +28,15 @@ This app is still under development, and new features are being added regularly.
 
 ### Colours
 
-![#f03c15](https://placehold.co/15x15/1F2125/1F2125.png) Primary Background: #1F2125 - A nearly black color for your main background.
+![#1F2125](https://placehold.co/15x15/1F2125/1F2125.png) Primary Background: #1F2125 - A nearly black color for your main background.
 
 ![#282C34](https://placehold.co/15x15/282C34/282C34.png) Secondary Background (for cards or modules): #282C34 - A slightly lighter dark grey to provide subtle contrast against the primary background.
+
+![#6959e0](https://placehold.co/15x15/6959e0/6959e0.png) Purple Header Background: #6959e0 - Purple colour for headers.
+
+![#7E8C8D](https://placehold.co/15x15/7E8C8D/7E8C8D.png) Grey Header Background: #7E8C8D - Grey colour for headers.
+
+![#48C9B0](https://placehold.co/15x15/48C9B0/48C9B0.png) Teal Header Background: #48C9B0 - Teal colour for headers.
 
 ![#FFFFFF](https://placehold.co/15x15/FFFFFF/FFFFFF.png) Primary Text: #FFFFFF - Pure white for main text, providing maximum contrast against a dark background.
 
@@ -47,3 +53,5 @@ This app is still under development, and new features are being added regularly.
 ![#2ECC71](https://placehold.co/15x15/2ECC71/2ECC71.png) Data Visualization Color 3: #2ECC71 - A bright green for tertiary data points or lines.
 
 ![#D35400](https://placehold.co/15x15/D35400/D35400.png) Error or Warning Color: #D35400 - A bright orange to draw attention to errors or warnings.
+
+![#57A0D2](https://placehold.co/15x15/57A0D2/57A0D2.png) Temperature Graph Color: #57A0D2 - A bright blue for temperature graphs.

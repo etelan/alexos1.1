@@ -1,6 +1,9 @@
 :root {
     --primary-bg: #1F2125;
     --secondary-bg: #282C34;
+    --purple-header-bg: #6959e0;
+    --grey-header-bg:#7E8C8D;
+    --teal-header-bg:#48C9B0;
     --primary-text: #FFFFFF;
     --secondary-text: #B2B2B2;
     --accent-color: #3498DB;
@@ -9,4 +12,5 @@
     --data-2: #F1C40F;
     --data-3: #2ECC71;
     --warning-color: #D35400;
+    --temperature-graph: #57A0D2;
 }

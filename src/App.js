@@ -8,10 +8,10 @@
 import './App.css';
 import TemperatureGraph from './components/TemperatureGraph/TemperatureGraph';
 import VirtualWardrobe from './components/Wardrobe/VirtualWardrobe';
-import BacklogList from './components/Backlog/components/BacklogList';
+import BacklogList from './components/Backlog/BacklogList';
 
-import * as gameImages from './components/Backlog/gamesImages/index';
-import * as projectImages from './components/Backlog/projectImages/index';
+import * as gameImages from './images/gamesImages/index';
+import * as projectImages from './images/projectImages/index';
 
 
 const styleLeft = {

@@ -1,0 +1,29 @@
+@import "./colours.css";
+
+.virtual-wardrobe {
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    width: 300px; /* Limit the width to 480px */
+  }
+  
+
+.virtual-wardrobe .carousel img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .virtual-wardrobe h3 {
+    text-align: center;
+    color: var(--primary-text);
+    background-color: var(--teal-header-bg);
+
+    border-radius: 25px;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+
+  

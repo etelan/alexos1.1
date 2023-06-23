@@ -1,6 +1,7 @@
 import React from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
-import styles from './TemperatureGraph.module.css';
+import styles from '../../componentStyles/TemperatureGraph.module.css';
+import '../../componentStyles/colours.css'
 
 const data = [
   // Add your temperature data here, formatted as below
@@ -14,13 +15,13 @@ const TemperatureGraph = () => {
   return (
     <div className={styles['office-temperature-graph']}>
       <h3>Office Temperature</h3>
-      <LineChart width={480} height={300} data={data}>
+      <LineChart width={480} height={420} data={data}>
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey="time" />
-        <YAxis />
-        <Tooltip />
+        <YAxis dy={-10}/>
+        <Tooltip/>
         <Legend />
-        <Line type="monotone" dataKey="temperature" stroke="#8884d8" activeDot={{ r: 8 }} />
+        <Line type="monotone" dataKey="temperature" stroke="var(--temperature-graph)" activeDot={{ r: 8 } } />
       </LineChart>
     </div>
   );

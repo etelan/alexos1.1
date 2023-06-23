@@ -1,6 +1,7 @@
 import React from 'react';
 import Item from './Item';
-import './ItemList.css'; // Import the CSS file
+
+import '../../componentStyles/ItemList.css'; // Import the CSS file
 
 const ItemList = ({ items, titles, name, order }) => {
 

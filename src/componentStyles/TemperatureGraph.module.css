@@ -1,0 +1,20 @@
+.office-temperature-graph {
+  position: absolute;
+  top: 20px; /* Add a margin to the top */
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Align the items to the right */
+}
+
+h3 {
+  text-align: right;
+  color: var(--primary-text);
+  background-color: var(--temperature-graph);
+  
+  border-radius: 25px;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}

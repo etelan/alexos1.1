@@ -9,11 +9,11 @@
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Import the carousel CSS
-import styles from './VirtualWardrobe.module.css';
+import styles from '../../componentStyles/VirtualWardrobe.module.css';
 import { Outfit } from './Outfit.js';
 
 // Import your outfit images
-import * as outfits from './images/index';
+import * as outfits from '../../images/WardrobeImages/index';
 
 const VirtualWardrobe = () => {
   return (

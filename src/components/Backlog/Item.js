@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Item.module.css';
+import styles from '../../componentStyles/Item.module.css';
 
 const Item = ({ imageSrc, text }) => {
   return (

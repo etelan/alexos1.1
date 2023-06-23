@@ -5,16 +5,16 @@ import '../../componentStyles/colours.css'
 
 const data = [
   // Add your temperature data here, formatted as below
-  { time: '10:00', temperature: 72 },
-  { time: '11:00', temperature: 74 },
-  { time: '12:00', temperature: 76 },
+  { time: '10:00', temperature: 30 },
+  { time: '11:00', temperature: 15 },
+  { time: '12:00', temperature: 20 },
   // ...
 ];
 
 const TemperatureGraph = () => {
   return (
     <div className={styles['office-temperature-graph']}>
-      <h3>Office Temperature</h3>
+      <h3>Office Temperature °C</h3>
       <LineChart width={480} height={420} data={data}>
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey="time" />

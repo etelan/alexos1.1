@@ -9,6 +9,7 @@ import './App.css';
 import TemperatureGraph from './components/TemperatureGraph/TemperatureGraph';
 import VirtualWardrobe from './components/Wardrobe/VirtualWardrobe';
 import BacklogList from './components/Backlog/BacklogList';
+import Thermometer from './components/Temperature/Thermometer';
 
 import * as gameImages from './images/gamesImages/index';
 import * as projectImages from './images/projectImages/index';
@@ -39,6 +40,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>alexos</p>
+        <Thermometer />
         <TemperatureGraph />
         <VirtualWardrobe />
         <BacklogList  imageDirectory={gameImages} name={"Games Backlog"} order={[2,1,0,3,4,5]} style={styleLeft}/>

@@ -6,34 +6,16 @@
  */
 
 import './App.css';
-import TemperatureGraph from './components/TemperatureGraph/TemperatureGraph';
+// Component imports
 import VirtualWardrobe from './components/Wardrobe/VirtualWardrobe';
 import BacklogList from './components/Backlog/BacklogList';
 import Thermometer from './components/Temperature/Thermometer';
 
+// Images for backlog lists
 import * as gameImages from './images/gamesImages/index';
 import * as projectImages from './images/projectImages/index';
-
-
-const styleLeft = {
-  position: 'fixed',
-  bottom: '0',
-  left: '0',
-  width: '400px',
-  marginLeft: '20px',
-  marginBottom: '20px',
-}
-
-const styleRight = {
-  position: 'fixed',
-  bottom: '0',
-  right: '0',
-  width: '400px',
-  marginRight: '20px',
-  marginBottom: '20px',
-}
-
-
+import { imageDirectoryOrder as projectOrder, styleRight} from './images/projectImages/index';
+import { imageDirectoryOrder as gameOrder, styleLeft} from './images/gamesImages/index';
 
 function App() {
   return (
@@ -41,10 +23,10 @@ function App() {
       <header className="App-header">
         <p>alexos</p>
         <Thermometer />
-        <TemperatureGraph />
+        {/* <TemperatureGraph /> */}
         <VirtualWardrobe />
-        <BacklogList  imageDirectory={gameImages} name={"Games Backlog"} order={[2,1,0,3,4,5]} style={styleLeft}/>
-        <BacklogList  imageDirectory={projectImages} name={"Projects"} order={[2,1,0,3,4,5]} style={styleRight}/>
+        <BacklogList  imageDirectory={gameImages} name={"Games Backlog"} order={gameOrder} style={styleLeft}/>
+        <BacklogList  imageDirectory={projectImages} name={"Projects"} order={projectOrder} style={styleRight}/>
       </header>
     </div>
   );

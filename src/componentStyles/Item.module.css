@@ -1,22 +1,43 @@
 @import "./colours.css";
 
 .container {
-width: 100%;
-display: flex;
-align-items: center;
-margin-top: 10px;
-background-color: var(--secondary-bg); /* Apply secondary background color /
-color: var(--primary-text); / Apply primary text color */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.todoBackground {
+    background-color: var(--secondary-bg); /* Apply secondary background color */
+}
+  
+.completedBackground {
+    background-color: var(--mint);
+}
+
+.todoText {
+    color: var(--primary-text); /* Apply primary text color */
+}
+
+.completedText {
+    color: var(--black);
+}
+
+.wontDoText {
+    color: var(--warning-color);
+}
+
+.wontDoBackground {
+    background-color: var(--secondary-accent);
 }
 
 .image {
-width: 20%;
+    width: 20%;
 }
 
 .text {
-width: 80%;
-display: inline-block;
-padding-left: 10px;
-text-align: left;
-color: var(--secondary-text); /* Apply secondary text color */
+    width: 80%;
+    display: inline-block;
+    padding-left: 10px;
+    text-align: left;
 }

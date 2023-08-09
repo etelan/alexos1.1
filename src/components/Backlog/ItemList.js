@@ -3,23 +3,22 @@ import Item from './Item';
 
 import '../../componentStyles/ItemList.css'; // Import the CSS file
 
-const ItemList = ({ items, titles, name, order }) => {
+const ItemList = ({ imageMap, name }) => {
 
-  // Sort the items based on the order array
-  const sortedItems = order.map((index) => items[index]);
-  const sortedTitles = order.map((index) => titles[index]);
+  console.log(imageMap)
 
   return (
     <div>
       <h2 style={{ marginBottom: '0px' }}>{name}</h2>
       <div className="scrollable-container">
-        {sortedItems.map((item, index) => (
-          <Item
-            key={order[index]}
-            imageSrc={item}
-            text={sortedTitles[index].replace(/_/g, ' ')}
-          />
-        ))}
+        {Array.from(imageMap.entries()).map(([title, imageSrc], index) => (
+            <Item
+              key={index}
+              imageSrc={imageSrc}
+              text={title}
+              completion={title.includes(':D')}
+            />
+          ))}
       </div>
     </div>
   );

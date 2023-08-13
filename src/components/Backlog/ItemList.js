@@ -15,7 +15,7 @@ const ItemList = ({ imageMap, name }) => {
             <Item
               key={index}
               imageSrc={imageSrc}
-              text={title}
+              text={title.replace(/_/g, " ")}
               completion={title.includes(':D')}
             />
           ))}

@@ -14,6 +14,7 @@ import Thermometer from './components/Temperature/Thermometer';
 // Images for backlog lists
 import * as gameImages from './images/gamesImages/index';
 import * as projectImages from './images/projectImages/index';
+import * as bookImages from './images/bookImages/index';
 import { imageDirectoryOrder as projectOrder, styleRight} from './images/projectImages/index';
 import { imageDirectoryOrder as gameOrder, styleLeft} from './images/gamesImages/index';
 
@@ -27,6 +28,7 @@ function App() {
         <VirtualWardrobe />
         <BacklogList  imageDirectory={gameImages} name={"Games Backlog"} order={gameOrder} style={styleLeft}/>
         <BacklogList  imageDirectory={projectImages} name={"Projects"} order={projectOrder} style={styleRight}/>
+        <BacklogList  imageDirectory={bookImages} name={"Books"} order={bookImages.bookOrder} style={bookImages.styleMiddle}/>
       </header>
     </div>
   );

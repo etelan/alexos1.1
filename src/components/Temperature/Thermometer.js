@@ -1,8 +1,7 @@
 import React from 'react';
 import useDataFetching from './useDataFecthing';
-
 const Thermometer = () => {
-  const { data, isLoading, error } = useDataFetching('https://www.york.ac.uk/teaching/cws/wws/webpage1.html', 10000);
+  const { data, isLoading, error } = useDataFetching('http://192.168.4.116:8000', 10000);
 
   if (isLoading) {
     return <div>Loading...</div>;
@@ -15,12 +14,17 @@ const Thermometer = () => {
   if (!data) {
     return null;
   }
+  
+  let formattedString = '';
+       
+  for (let [key, value] of Object.entries(data)) {
+    formattedString += key + " " + value + "°C\n"
+  }
 
   // Render your component with the fetched data
   return (
     <div>
-      <h1>Data fetched:</h1>
-      <pre>{JSON.stringify(data, null, 2)}</pre>
+      <pre>{formattedString}</pre>
     </div>
   );
 };

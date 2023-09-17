@@ -8,7 +8,7 @@ export { default as Fallout_New_Vegas } from './falloutnv.jpg';
 
 const imageDirectoryOrder = [
     'Fallout_New_Vegas',
-    'Advanced_Wars',
+    'Advanced_Wars :/',
     'Pokemon_Brilliant',
     'Zelda_TOTK',
     'Read_Dead_Redeption_2',

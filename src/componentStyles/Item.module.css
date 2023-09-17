@@ -23,12 +23,22 @@
     color: var(--black);
 }
 
-.wontDoText {
-    color: var(--warning-color);
+/* Completed Enough */
+.completedEnoughBackground {
+    background-color: var(--lilac);
+}
+  
+.completedEnoughText {
+    color: var(--black);
 }
 
-.wontDoBackground {
-    background-color: var(--secondary-accent);
+/* Working On It */
+.workingOnItBackground {
+    background-color: var(--orange);
+}
+
+.workingOnItText {
+    color: var(--black);
 }
 
 .image {
@@ -36,6 +46,7 @@
 }
 
 .text {
+    height:100%;
     width: 80%;
     display: inline-block;
     padding-left: 10px;

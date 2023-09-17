@@ -3,22 +3,34 @@ import Item from './Item';
 
 import '../../componentStyles/ItemList.css'; // Import the CSS file
 
-const ItemList = ({ imageMap, name }) => {
+// Helper function to extract the face part from the title
+const extractFace = (title) => {
+  var face = title.slice(-2)
+  if (face.includes(":")) {
+    return face
+  }
+  return "default"
+};
 
-  console.log(imageMap)
-
+const ItemList = ({ imageMap, name }) => {  
   return (
     <div>
       <h2 style={{ marginBottom: '0px' }}>{name}</h2>
       <div className="scrollable-container">
-        {Array.from(imageMap.entries()).map(([title, imageSrc], index) => (
+        {Array.from(imageMap.entries()).map(([title, imageSrc], index) => {
+          // Determine the completion value based on the title
+          const face = extractFace(title);
+          console.log( face )
+
+          return (
             <Item
               key={index}
               imageSrc={imageSrc}
               text={title.replace(/_/g, " ")}
-              completion={title.includes(':D')}
+              face={face}
             />
-          ))}
+          );
+        })}
       </div>
     </div>
   );

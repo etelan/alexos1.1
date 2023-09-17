@@ -8,14 +8,16 @@ const styleRight = {
   }
 
 const imageDirectoryOrder = [
+    'Fishing_Game :]',
     'Basement',
-    'Dashboard',
     'Visualise_Songkick_Data',
     'Kindle_Calendar',
+    'Dashboard :D',
     'Thermometers :D',
     'Solar_Panels :D',
   ];
   
+  export { default as Fishing_Game } from './fishing.jpg';
   export { default as Basement } from './basement.jpg';
   export { default as Dashboard } from './dashboard.jpg';
   export { default as Visualise_Songkick_Data } from './earth.jpg';

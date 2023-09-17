@@ -6,7 +6,16 @@ const BacklogList = ({ imageDirectory, name, order, style }) => {
   let orderedImageDirectory = new Map();
 
   for (const title of order) {
-    orderedImageDirectory.set(title, imageDirectory[title.replace(" :D", "")]);
+
+    if (title.includes(":D")) {
+      orderedImageDirectory.set(title, imageDirectory[title.replace(" :D", "")]);
+    } else if (title.includes(":)")) {
+      orderedImageDirectory.set(title, imageDirectory[title.replace(" :)", "")]);
+    } else if (title.includes(":]")) {
+      orderedImageDirectory.set(title, imageDirectory[title.replace(" :]", "")]);
+    } else {
+      orderedImageDirectory.set(title, imageDirectory[title]);
+    }
   }
 
   return (

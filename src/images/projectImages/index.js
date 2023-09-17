@@ -13,8 +13,8 @@ const imageDirectoryOrder = [
     'Visualise_Songkick_Data',
     'Kindle_Calendar',
     'Dashboard :D',
-    'Thermometers :D',
     'Solar_Panels :D',
+    'Thermometers :)',
   ];
   
   export { default as Fishing_Game } from './fishing.jpg';

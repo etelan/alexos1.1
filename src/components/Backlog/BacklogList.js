@@ -7,15 +7,16 @@ const BacklogList = ({ imageDirectory, name, order, style }) => {
 
   for (const title of order) {
 
-    if (title.includes(":D")) {
-      orderedImageDirectory.set(title, imageDirectory[title.replace(" :D", "")]);
-    } else if (title.includes(":)")) {
-      orderedImageDirectory.set(title, imageDirectory[title.replace(" :)", "")]);
-    } else if (title.includes(":]")) {
-      orderedImageDirectory.set(title, imageDirectory[title.replace(" :]", "")]);
-    } else {
-      orderedImageDirectory.set(title, imageDirectory[title]);
-    }
+    const new_title = title.replace(" :]", "")
+    .replace(" :)", "")
+    .replace(" :D", "")
+    .replace(/:/g, "")
+    .replace(/#/g, "")
+    .replace(/ /g, "_")
+
+    orderedImageDirectory.set(title, imageDirectory[
+      new_title
+    ]);
   }
 
   return (

@@ -25,7 +25,7 @@
 
 /* Completed Enough */
 .completedEnoughBackground {
-    background-color: var(--lilac);
+    background-color: var(--purple);
 }
   
 .completedEnoughText {
@@ -34,7 +34,7 @@
 
 /* Working On It */
 .workingOnItBackground {
-    background-color: var(--orange);
+    background-color: var(--lilac);
 }
 
 .workingOnItText {

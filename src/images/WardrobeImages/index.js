@@ -11,3 +11,5 @@ export { default as outfit10 } from './outfit10.jpg';
 export { default as outfit11 } from './outfit11.jpg';
 export { default as outfit12 } from './outfit12.jpg';
 export { default as outfit13 } from './outfit13.jpg';
+export { default as outfit14 } from './outfit14.jpg';
+

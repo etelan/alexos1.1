@@ -20,8 +20,7 @@ const ItemList = ({ imageMap, name }) => {
         {Array.from(imageMap.entries()).map(([title, imageSrc], index) => {
           // Determine the completion value based on the title
           const face = extractFace(title);
-          console.log( face )
-
+          
           return (
             <Item
               key={index}
